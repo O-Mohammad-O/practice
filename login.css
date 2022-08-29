@@ -1,0 +1,107 @@
+/* فونت های موجود در صفحه */
+@font-face {
+    font-family: 'h2';
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'p';
+    src: url(fonts/Urbanist-VariableFont_wght.ttf);
+}
+*{
+    color: #fff;
+    font-family: 'p';
+}
+body{
+    background-image: url(img/773433.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+}
+.container-inbox{
+    max-width: 1200px;
+    margin: 105px auto;
+}
+h2{
+    font-family: 'h2';
+    font-size: 100px;
+    text-shadow: 5px 5px 0 orangered;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex2{
+    justify-content: space-between;
+}
+.left-box p{
+    margin-top: -90px;
+    font-weight: bold;
+    font-family: 'p';
+}
+.social{
+    display: inline-block;
+    padding: 6px;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+label{
+    display: block;
+}
+input{
+    color: black;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+.input{
+    width: 250px;
+    height: 25px;
+    text-align: center;
+}
+.input:focus{
+    border-bottom: solid orangered 3px;
+    color: orangered;
+}
+
+#Remember{
+    display: inline-block;
+}
+button{
+    background-color: orangered;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px #000;
+    transition: all 1s ease-in;
+    color: #000;
+}
+button:hover{
+    box-shadow: none;
+    transition: all 1s ease-out;
+}
+legend{
+    text-align: center;
+    font-family: 'h2';
+    font-size: 45px;
+}
+@media screen and (max-width:950px){
+    .flex2{
+        justify-content: center;
+    }  
+    .left-box{
+        text-align: center;
+    }
+    .container-inbox{
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,126 @@
+/* فونت های موجود در صفحه */
+@font-face {
+    font-family: 'h2';
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'p';
+    src: url(fonts/Urbanist-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'p';
+}
+body{
+    background-image: url(img/773433.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+h2{
+    font-family: 'h2';
+}
+a{
+    color: #fff;
+}
+.container{
+    width: 100%;
+}
+.container-inbox{
+    max-width: 1200px;
+    margin: 215px auto;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.google-button{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    height: 13px;
+    border-radius: 18px;
+}
+.left-box{
+    text-align: end;
+    padding: 0 13px;
+}
+.google-button img{
+    width: 30px;
+    height: 30px;
+}
+.texts{
+    margin: 23px 0;
+}
+.texts h2{   
+    margin-bottom: 6px;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 5px 5px 0 orangered;
+}
+label{
+    display: block;
+    color: #fff;
+}
+form{
+    border-left: solid 3px #fff;
+    padding: 10px;
+}
+#agree-label{
+    display: inline-block;
+    font-weight: bold;
+    color: orangered;
+}
+input{
+    outline: none;
+    margin-bottom: 12px;
+}
+.input{
+    width: 240px;
+    height: 22px;
+    border-radius: 5px;
+    border: none;
+    color: orangered;
+    text-align: center;
+}
+.input:focus{
+    border-bottom: solid 3px orangered;
+}
+button{
+    text-align: center;
+    width: 229px;
+    height: 35px;
+    font-size: 20px;
+    background: orangered;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px;
+    transition: all 1s ease-in;
+}
+button a{
+    text-decoration: none;
+}
+button:hover{
+    box-shadow: none;
+    transition: all 1s ease-out;
+}
+.right-box{
+    text-align: center;
+}
+@media screen and (max-width:950px){
+    form{
+        border-left: none;
+        border-top: solid 3px #fff;
+        margin-top: 10px;
+    }
+    .container-inbox{
+        margin: 100px auto;
+    }
+    .left-box{
+        text-align: center;
+    }
+}
